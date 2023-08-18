@@ -11,7 +11,7 @@ public class ExtractPoints {
     /// Extracts the points from ImageJ Polygon ROIs and saves them as csv
 
     public static void main(String args[]) throws IOException {
-        String path = "/tmp/1-TBNC";   // Directory with the *.roi files
+        String path = "/tmp/idr0150/2-METABRIC";   // Directory with the *.roi files
         File csvPath = new File(path+"/csv");
         if (!csvPath.exists()) // create a subdirectory csv for the exported files
             csvPath.mkdir();
@@ -23,11 +23,14 @@ public class ExtractPoints {
             Roi roi = dec.getRoi();
             if (roi instanceof PolygonRoi) {
                 PolygonRoi p = (PolygonRoi) roi;
+                System.out.println(p);
                 FileWriter outFile = new FileWriter(path+"/csv/"+roiFile.getName()+".csv");
                 try (BufferedWriter out = new BufferedWriter(outFile)) {
                     out.write("x,y\n");
                     for (int i=0; i<p.size(); i++) {
-                        out.write(p.getXCoordinates()[i]+","+p.getYCoordinates()[i]+"\n");
+                        int x = p.getXCoordinates()[i]+(int)p.getXBase();
+                        int y = p.getYCoordinates()[i]+(int)p.getYBase();
+                        out.write(x+","+y+"\n");
                     }
                 }
             }
