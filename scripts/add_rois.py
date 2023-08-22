@@ -54,7 +54,7 @@ with omero.cli.cli_login() as c:
     for ds, img in get_images(conn):
         delete_rois(conn, img)
         img_basename = img.getName().replace(".tiff", "")
-        roi_file = f"{base_dir}/{ds.getName()}/{img_basename}.roi.csv"
+        roi_file = f"{base_dir}/{ds.getName()}/csv/{img_basename}.roi.csv"
         if not os.path.isfile(roi_file):
             print(f"{roi_file} not found!")
             continue
