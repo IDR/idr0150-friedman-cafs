@@ -1,0 +1,105 @@
+---
+name: idr0150-friedman-cafs/experimentA
+version: 1
+
+defaults:
+  # Should the column be processed when creating bulk-annotations (yes/no)
+  include: no
+  # Columns type of the bulk-annotations column
+  type: string
+
+  # If non-empty a string used to separate multiple fields in a column
+  # White space will be stripped
+  split: ;
+  # Should this column be included in the clients (yes/no)
+  includeclient: yes
+  # Should this column be visible in the clients, if no the column should be
+  # hidden in the client but will still be indexed by the searcher (yes/no)
+  visible: yes
+  # Should empty values be omitted from the client display
+  omitempty: yes
+
+columns:
+
+  - name: Characteristics [Organism Part]
+    clientname: Organism Part
+    include: yes
+
+  - name: Characteristics [Patient Number]
+    clientname: Patient Number
+    include: yes
+
+  - name: Characteristics [Core Number]
+    clientname: Core Number
+    include: yes
+
+  - name: Characteristics [METABRIC ID]
+    clientname: METABRIC ID
+    include: yes
+
+  - name: Characteristics [BRCA Status]
+    clientname: BRCA Status
+    include: yes
+
+  - name: Characteristics [Age at Dx]
+    clientname: Age at Dx
+    include: yes
+
+  - name: Characteristics [RFS]
+    clientname: RFS
+    include: yes
+
+  - name: Characteristics [RFS*]
+    clientname: RFS*
+    include: yes
+
+  - name: Characteristics [OS]
+    clientname: OS
+    include: yes
+
+  - name: Characteristics [OS*]
+    clientname: OS*
+    include: yes
+
+  - name: Characteristics [Sx Grade]
+    clientname: Sx Grade
+    include: yes
+
+  - name: Characteristics [Sx Tumor Size (cm)]
+    clientname: Sx Tumor Size (cm)
+    include: yes
+
+  - name: Characteristics [LN]
+    clientname: LN
+    include: yes
+
+  - name: Characteristics [T Stage]
+    clientname: T Stage
+    include: yes
+
+  - name: Assay Name
+    clientname: Assay Name
+    include: yes
+
+  - name: Channels
+    clientname: Channels
+    include: yes
+
+
+  ######################################################################
+  # mapr groups
+  ######################################################################
+
+  - group:
+      namespace: openmicroscopy.org/mapr/organism
+      columns:
+        - name: Characteristics [Organism]
+          clientname: Organism
+          include: yes
+
+advanced:
+  ignore_missing_primary_key: yes
+  primary_group_keys:
+    - namespace: openmicroscopy.org/mapr/organism
+      keys:
+        - Organism
