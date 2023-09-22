@@ -1,0 +1,105 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.				
+				
+# STUDY DESCRIPTION SECTION				
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details				
+				
+Comment[IDR Study Accession]	idr0150			
+Study Title	Cancer-associated fibroblast compositions change with breast cancer progression linking the ratio of S100A4+ and PDPN+ CAFs to clinical outcome			
+Study Type	multiplexed immunofluorescence			
+Study Type Term Source REF	NCIT			
+Study Type Term Accession	NCIT_C181928			
+Study Description	Tumors are supported by cancer-associated fibroblasts (CAFs). CAFs are heterogeneous and carry out distinct cancer-associated functions. Understanding the full repertoire of CAFs and their dynamic changes as tumors evolve could improve the precision of cancer treatment. Here we comprehensively analyze CAFs using index and transcriptional single-cell sorting at several time points along breast tumor progression in mice, uncovering distinct subpopulations. Notably, the transcriptional programs of these subpopulations change over time and in metastases, transitioning from an immunoregulatory program to wound-healing and antigen-presentation programs, indicating that CAFs and their functions are dynamic. Two main CAF subpopulations are also found in human breast tumors, where their ratio is associated with disease outcome across subtypes and is particularly correlated with BRCA mutations in triple-negative breast cancer. These findings indicate that the repertoire of CAF changes over time in breast cancer progression, with direct clinical implications.		
+Study Key Words	Breast cancer	Cancer associated fibroblasts (CAFs)			
+Study Organism	Homo sapiens			
+Study Organism Term Source REF	NCBITaxon			
+Study Organism Term Accession	9606			
+Study Experiments Number	1			
+Study External URL		
+Study BioImage Archive Accession		
+Study Public Release Date				
+				
+# Study Publication				
+Study PubMed ID	35122040			
+Study Publication Title	Cancer-associated fibroblast compositions change with breast cancer progression linking the ratio of S100A4+ and PDPN+ CAFs to clinical outcome			
+Study Author List	Friedman G, Levi-Galibov O, David E, Bornstein C, Giladi A, Dadiani M, Mayo A, Halperin C, Pevsner-Fischer M, Lavon H, Mayer S, Nevo R, Stein Y, Balint-Lahat N, Barshack I, Ali HR, Caldas C, Nili-Gal-Yam E, Alon U, Amit I, Scherz-Shouval R		
+Study PMC ID				
+Study DOI	https://doi.org/10.1038/s43018-020-0082-y			
+				
+# Study Contacts				
+Study Person Last Name	Scherz-Shouval			
+Study Person First Name	Ruth			
+Study Person Email	ruth.shouval@weizmann.ac.il			
+Study Person Address	Weizmann Institute of Science; Herzl 234 Rehovot' Israel 7610001			
+Study Person ORCID	0000-0002-4570-121X			
+Study Person Roles	submitter			
+				
+# Study License and Data DOI				
+Study License	CC BY 4.0			
+Study License URL	https://creativecommons.org/licenses/by/4.0/			
+Study Copyright	Scherz-Shouval et al			
+Study Data Publisher	University of Dundee			
+Study Data DOI				
+				
+Term Source Name	NCBITaxon			
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
+				
+				
+# EXPERIMENT SECTION				
+# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment			
+				
+Experiment Number	1			
+Comment[IDR Experiment Name]	idr0150-friedman-cafs/experimentA	
+Experiment Sample Type	tissue	
+Experiment Description	Immunofluorescent staining performed on FFPE sections from a cohort of triple-negative breast cancer patients and a cohort of breast cancer patients.			
+Experiment Size	3D Images: 	Average Image Dimension (XYC):	Total Tb: 
+Experiment Example Images	TNBC, Patient_51_core_1			
+Experiment Imaging Method	fluorescence microscopy			
+Experiment Imaging Method Term Source REF	Fbbi			
+Experiment Imaging Method Term Accession	FBbi_00000246			
+Experiment Comments	Wide field microscopy				
+			
+				
+# assay files				
+Experiment Assay File	idr0150-experimentA-annotation			
+Experiment Assay File Format	tab-delimited text			
+Assay Experimental Conditions				
+Assay Experimental Conditions Term Source REF				
+Assay Experimental Conditions Term Accession				
+Quality Control Description	
+			
+				
+# Protocols				
+Protocol Name	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
+Protocol Type	growth protocol	treatment protocol	image acquisition and feature extraction protocol	data analysis protocol
+Protocol Type Term Source REF	EFO	EFO		
+Protocol Type Term Accession	EFO_0003789	EFO_0003969		
+Protocol Description	Sample Description: Formalin-fixed paraffin-embedded tissues represented in tissue arrays. Processed data were obtained using Fiji and the 'rolling ball' method.	
+Quantification Process: Quantification of TMA staining was performed using the Fiji image processing platform. ROIs were manually depicted to include all intact tissue areas and exclude regions of adipose tissue (due to nonspecific staining). H&Es from the TNBC TMA were used to assist in training and optimizing this step. Following background subtraction using a rolling ball with a radius of 200 pixels, the CK, S100A4 and PDPN channels were thresholded using Otsu method. All pixels above the threshold were counted as 1, and their sum was divided by the ROI. Channel/ROI scores of all replicate cores from the same patient (typically three) were averaged and the average score was used for statistical analysis. Ratios between different stains were calculated for each core and averaged for each patient.
+
+				
+# Phenotypes				
+Phenotype Name				
+Phenotype Description				
+Phenotype Score Type				
+Phenotype Term Source REF	CMPO			
+Phenotype Term Name			
+Phenotype Term Accession		 	
+				
+				
+# Feature Level Data Files (give individual file details unless there is one file per well)				
+Feature Level Data File Name				
+Feature Level Data File Format				
+Feature Level Data File Description			
+Feature Level Data Column Name				
+Feature Level Data Column Description	
+		
+				
+#  Processed Data Files 				
+Processed Data File Name			
+Processed Data File Format	tab-delimited text			
+Processed Data File Description				
+Processed Data Column Name			
+Processed Data Column Type				
+Processed Data Column Annotation Level		
+Processed Data Column Description				
+Processed Data Column Link To Assay File			
