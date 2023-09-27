@@ -1,0 +1,46 @@
+---
+channels:
+    1:
+        active: true
+        color: 1CFF00
+        end: 8000.0
+        label: EPI - GFP
+        max: 65535.0
+        min: 0.0
+        start: 0.0
+    2:
+        active: false
+        color: FFFFFF
+        end: 20000.0
+        label: DIC Camera
+        max: 65535.0
+        min: 0.0
+        start: 1000.0
+    3:
+        active: true
+        color: FF0000
+        end: 1000.0
+        label: EPI - TRITC
+        max: 65535.0
+        min: 0.0
+        start: 500.0
+    4:
+        active: true
+        color: FF00FF
+        end: 8000.0
+        label: EPI - Cy5
+        max: 65535.0
+        min: 0.0
+        start: 0.0
+    5:
+        active: true
+        color: 1500FF
+        end: 8000.0
+        label: EPI - DAPI
+        max: 65535.0
+        min: 0.0
+        start: 0.0
+greyscale: false
+t: 1
+version: 2
+z: 1
